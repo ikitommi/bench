@@ -1,0 +1,8 @@
+{:paths ["resources" "src"]
+ :deps {org.clojure/clojure {:mvn/version "1.10.0"}}
+ :aliases
+ {:perf {:extra-deps {criterium {:mvn/version "0.4.4"}
+                      metosin/porsas {:mvn/version "0.0.1-alpha4"}}
+         :jvm-opts ["-server"
+                    "-Xmx4096m"
+                    "-Dclojure.compiler.direct-linking=true"]}}}
